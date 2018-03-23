@@ -1,0 +1,26 @@
+.c-link {
+  border-bottom: 0.25px solid $grey;
+  transition: border-bottom .1s ease;
+    &:hover {
+      border-color: transparent;
+    }
+}
+
+.c-link + .c-link {
+  margin-left: 0.55em;
+}
+
+.c-link--viber {
+  font-size: 21px;
+  border-bottom: 0.5px dashed $grey;
+}
+
+.c-link--light {
+  font-weight: $fontLight;
+}
+
+@media(max-width: 768px) {
+  .c-link + .c-link {
+    margin-left: 2em;
+  }
+}
